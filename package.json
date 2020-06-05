@@ -6,14 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaishen33/node.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kaishen33/node/issues"
-  },
-  "homepage": "https://github.com/kaishen33/node#readme"
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "inquirer": "^6.3.1"
+  }
 }
