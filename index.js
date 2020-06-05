@@ -61,11 +61,11 @@ function projectQuestion() {
 
 function readMeGen(answers) {
     return `
-  readme.MD
+  readme.md
 
-    #HW7#
+    # HW7
 
-      ##Project Title: ${answers.name}##
+      ## Project Title: ${answers.name}
       The project is about: ${answers.description}
       ${answers.ToC}
       ${answers.Installation}
@@ -83,10 +83,10 @@ projectQuestion()
     .then(function (answers) {
         const MD = readMeGen(answers);
 
-        return writeFile("readme.MD", MD);
+        return writeFile("readme.md", MD);
     })
     .then(function () {
-        console.log("Successfully wrote to index.html");
+        console.log("Successfully wrote to md");
     })
     .catch(function (err) {
         console.log(err);
