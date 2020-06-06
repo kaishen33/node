@@ -61,22 +61,22 @@ function projectQuestion() {
 
 function readMeGen(answers) {
     return `
-  readme.md
+### readme.md
 
-    # HW7
+# HW7
 
-      ## Project Title: ${answers.name}
-      The project is about: ${answers.description}
-      ${answers.ToC}
-      ${answers.Installation}
-      It is used by: ${answers.Usage}
-      ${answers.Liscense}
-      ${answers.Contributing}
-      ${answers.Installation}
-   
-   
-   
-      `;
+## Project Title: ${answers.name}
+* The project is about: ${answers.description}
+* ${answers.ToC}
+* ${answers.Installation}
+* It is used by: ${answers.Usage}
+* ${answers.Liscense}
+* ${answers.Contributing}
+* ${answers.Installation}
+    
+    
+    
+        `;
 }
 
 projectQuestion()
